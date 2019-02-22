@@ -1,0 +1,5 @@
+tT = ((input("Digite as taxas de transmissao de video, audio e dados separadas por virgula: ")))
+capC = (float(input("Digite a capacidade do canal: 2")))
+taxas = [float(i) for i in tT.split(",")]
+print(taxas)
+
