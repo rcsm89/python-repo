@@ -1,0 +1,5 @@
+num = (float(input("Digite um numero: ")))
+if (num > 0):
+    print("Numero maior que zero")
+else:
+    print("Numero menor que zero")
