@@ -11,4 +11,4 @@ if(p1>=10) and (p1<=100) and (c1 >=10) and (c1<=100) and (c2>=10) and (c2<=100):
     else:
         print("Gangorra desequilibrada para a direita")
 else:
-    print("Valores invalidos!")
+    print("Valores invalidos! ")
