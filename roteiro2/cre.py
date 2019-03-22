@@ -1,5 +1,5 @@
 menor = 0
-mmenor = ""
+mmenor = "999"
 soma = 0
 cont = 0
 while True:
@@ -16,5 +16,6 @@ while True:
         mmenor = mat
 
 print(mmenor)
+
 media = soma/cont
 print("%.2f" % media)
