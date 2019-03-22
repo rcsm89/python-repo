@@ -1,5 +1,5 @@
-menor = 0
-mmenor = "999"
+menor = None
+mmenor = " "
 soma = 0
 cont = 0
 while True:
@@ -7,15 +7,13 @@ while True:
     if (mat == "999"):
         break
     cre = float(input())
-    if (cont == 0):
-        menor = cre
     soma += cre
     cont += 1
-    if (menor >= cre):
+    if not menor or (cre < menor):
         menor = cre
         mmenor = mat
 
 print(mmenor)
-
 media = soma/cont
 print("%.2f" % media)
+
