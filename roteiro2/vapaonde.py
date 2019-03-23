@@ -1,5 +1,4 @@
-mpreco = 0
-mren = 0
+mk = 0
 cmren = " "
 while True:
     nc = input()
@@ -7,10 +6,9 @@ while True:
         break
     km = int(input())
     val = float(input())
-    if (km / val * 2 > mren) and (val * 2 <= 300):
-        mren = km / val * 2
-        mpreco = val * 2
+    if (km > mk) and (val * 2 <= 300):
         cmren = nc.upper()
+        mk = km
 if (cmren == " "):
     print("SEM DESTINO")
 else:
