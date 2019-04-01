@@ -1,8 +1,10 @@
 # python-repo
 Repositorio para listas em PY
 
-*Roteiro 1* ok
+*Roteiro 1 (Condicional)* ok
 
-*Roteiro 2* ok
+*Roteiro 2 (Estruturas de repetição)* ok
 
+*Roteiro 3 (Listas)* ---
 
+*Roteiro 4 (String)* ---
