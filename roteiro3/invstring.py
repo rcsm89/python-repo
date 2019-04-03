@@ -1,7 +1,7 @@
-n = 1
-while (n > 0):
-    n = int(input())
-    nome = " " * n
-    for i in range(n):
-        nome = nome[:i] + input() + nome[i + 1:]
-    print(nome)
+n = int(input())
+for i in range(n):
+    nome = input()
+    nomer = ""
+    for i in range(1, len(nome)+1):
+        nomer += nome[-i]
+    print(nomer)
