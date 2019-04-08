@@ -1,6 +1,6 @@
 n = int(input())
-aray = list(map(int, str(input()).split(" ")))
-# lr = list(map(int, aray))
+aray = [int (i) for i in input().split()]
+#aray = list(map(int, str(input()).split(" ")))
 menor, im = aray[0], 0
 for i in range(1, len(aray)):
     if (aray[i] < menor):
