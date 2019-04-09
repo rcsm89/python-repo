@@ -1,10 +1,13 @@
+#Questão: Chandu e letras consecultiva
 n = int(input())
 for j in range(n):
-    nome = input()
-    good = False
-    while(not good):
-        for i in range(len(nome)):
-            if(i+1 < len(nome)):
-                if(nome[i]==nome[i+1]):
-                    nome = nome[0:i] + nome [i+1:]
-        if(nome)
+    pal = input()
+    while 1:
+        controle = True
+        for i in range(len(pal)):
+            if(i+1 < len(pal)):
+                if(pal[i] == pal[i+1]):
+                    pal = pal[:i] + pal[(i+1):]
+                    controle = False
+        if(controle): break
+    print(pal)

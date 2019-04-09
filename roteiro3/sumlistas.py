@@ -1,16 +1,18 @@
 tl1 = int(input())
-if not (tl1 > 0):
+if (tl1 <= 0):
     print("Erro - A lista deve ter pelo menos 1 elemento.")
 else:
-    lr = []
+    lr, res = [], ""
     for i in range(tl1):
         a = int(input())
         lr.append(a)
+        res += str(a)+" "
     tl2 = int(input())
-    if not (tl2 > 0):
+    if (tl2 == 0):
         print("Erro - A lista deve ter pelo menos 1 elemento.")
     else:
         for i in range(tl2):
             a = int(input())
+            res += str(a)+" "
             lr.append(a)
-        print(' '.join(str(val) for val in lr))
+        print(res[:-1])

@@ -7,7 +7,9 @@
 
 *Roteiro 3 (Listas)* **ok**
 
-*Roteiro 4 (String)* **...**
+*Roteiro 4 (String)* **ok**
+
+*Roteiro 5 (Matrizes)* **...**
 
 
 `IFPB Campina Grande; Engenharia da Computação; Algoritmo.`
