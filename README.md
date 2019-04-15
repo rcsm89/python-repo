@@ -10,7 +10,9 @@ Repositorio para listas em PY
 
 *Roteiro 4 (String)* **ok**
 
-*Roteiro 5 (Matrizes)* **...**
+*Roteiro 5 (Funções)* **Em andamento...**
+
+*Roteiro 6 (Matrizes)* **...**
 
 
 `IFPB Campina Grande; Engenharia da Computação; Algoritmo.`
