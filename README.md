@@ -10,7 +10,7 @@ Repositorio para listas em PY
 
 *Roteiro 4 (String)* **ok**
 
-*Roteiro 5 (Funções)* **Em andamento...**
+*Roteiro 5 (Funções)* **ok**
 
 *Roteiro 6 (Matrizes)* **...**
 
