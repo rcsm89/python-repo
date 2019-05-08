@@ -5,6 +5,9 @@ for i in range(4):
         val = int(input())
         row.append(val if (i!=j) else val*k)
     mat.append(row)
-print('\n'.join([' '.join([str(item) for item in row])
-      for row in mat]))
-
+res = ""
+for p in range(4):
+    for v in range(4):
+        res += str(mat[v][p])+" "
+    res = res+"\n"
+print(res[:-1])
