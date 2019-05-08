@@ -6,7 +6,7 @@ for i in range(linhas):
     for j in range(col):
         val = int(input())
         diagPri += val if i == j else 0
-        diagSec += val if i + j == 2 else 0
+        diagSec += val if i + j == linhas-1 else 0
         men0 += 1 if val<0 else 0
         mai0 += 1 if val>0 else 0
         row.append(val)
