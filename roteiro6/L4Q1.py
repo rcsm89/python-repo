@@ -3,17 +3,17 @@ def ganhouJogo(matrix):
         col = [k[i] for k in matrix]
 	#Checando linhas
         if(matrix[i].count(matrix[i][0]) == 3 and matrix[i][0]!="*"):
-            return ["Eduardo" if matrix[i][0] == "X" else "Leonardo","linha"+(str(i+1))]
+            return ("Eduardo" if matrix[i][0] == "X" else "Leonardo")+" ganhou o jogo na linha "+(str(i+1))+"."
             #Checando colunas
         elif(col.count(col[0]) == 3 and col[0]!="*"):
-            return ["Eduardo" if col[0] == "X" else "Leonardo", "coluna "+str(i+1)]
+            return ("Eduardo" if col[0] == "X" else "Leonardo")+" ganhou o jogo na coluna "+str(i+1)+"."
         #Checando diagonais
     d1 = [matrix[l][l] for l in range(3)]
     d2 = [matrix[v][abs(v-2)] for v in range(3)]
     if(d1.count(d1[0]) == 3 and d1[0] != "*"):
-        return ["Leonardo" if col[0] == "X" else "Eduardo", "diagonal principal"]
+        return ("Leonardo" if col[0] == "X" else "Eduardo")+ " ganhou o jogo na diagonal principal."
     elif(d2.count(d2[0]) ==3 and d2[0] != "*"):
-        return ["Leonardo" if col[0] == "X" else "Eduardo","diagonal secundaria"]
+        return ("Leonardo" if col[0] == "X" else "Eduardo")+" ganhou o jogo na diagonal secundaria."
     return 0
 
 
@@ -40,7 +40,8 @@ for k in range(jogadas):
         print( ("Eduardo" if jogada[0] == "X" else "Leonardo") + " efetuou sua jogada com sucesso.")
     if(ganhouJogo(jogo_inicial) != 0):
         res = ganhouJogo(jogo_inicial)
-        print(res[0]+" ganhou o jogo na "+res[1]+".")
+        print(ganhouJogo(jogo_inicial))
+        break
     elif(k == jogadas-1):
         print("Nem no jogo da velha conseguimos ganhar algo, vamos voltar para o Dark Souls.")
 
