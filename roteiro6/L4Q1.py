@@ -11,10 +11,11 @@ def ganhouJogo(matrix):
     d1 = [matrix[l][l] for l in range(3)]
     d2 = [matrix[v][abs(v-2)] for v in range(3)]
     if(d1.count(d1[0]) == 3 and d1[0] != "*"):
-        return ("Leonardo" if col[0] == "X" else "Eduardo")+ " ganhou o jogo na diagonal principal."
+        return ("Leonardo" if d1[0] == "O" else "Eduardo")+" ganhou o jogo na diagonal principal."
     elif(d2.count(d2[0]) ==3 and d2[0] != "*"):
-        return ("Leonardo" if col[0] == "X" else "Eduardo")+" ganhou o jogo na diagonal secundaria."
-    return 0
+        return ("Leonardo" if d2[0] == "O" else "Eduardo")+" ganhou o jogo na diagonal secundaria."
+    else:
+        return 0
 
 
 def casaOcupada(matrix, x, y, simbol):
@@ -39,7 +40,6 @@ for k in range(jogadas):
         jogo_inicial[int(jogada[1])][int(jogada[2])] = jogada[0]
         print( ("Eduardo" if jogada[0] == "X" else "Leonardo") + " efetuou sua jogada com sucesso.")
     if(ganhouJogo(jogo_inicial) != 0):
-        res = ganhouJogo(jogo_inicial)
         print(ganhouJogo(jogo_inicial))
         break
     elif(k == jogadas-1):

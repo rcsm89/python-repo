@@ -15,9 +15,9 @@ def triangularInferior(matrix):
 
 mat = [[int(k) for k in str(input()).split()]for i in range(3)]
 while(True):
-    print("Por cima" if triangularInferior(mat) else "Por baixo" if triangularSuperior(mat) else "Nao pode atravessar")
-    l = input()
-    mat = [[int(k) for k in str(input()).split()]for i in range(3)]
-
-
-    
+    try:
+        print("Por cima" if triangularInferior(mat) else "Por baixo" if triangularSuperior(mat) else "Nao pode atravessar")
+        l = input()
+        mat = [[int(k) for k in str(input()).split()]for i in range(3)]
+    except EOFError:
+        break
