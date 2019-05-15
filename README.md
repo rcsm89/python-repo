@@ -12,7 +12,9 @@ Repositorio para listas em PY
 
 *Roteiro 5 (Funções)* **ok**
 
-*Roteiro 6 (Matrizes)* **...**
+*Roteiro 6 (Matrizes)* **ok(mas faltam 3 questões)**
+
+*Roteiro 7 (Recursividade)* **...**
 
 
 `IFPB Campina Grande; Engenharia da Computação; Algoritmo.`
