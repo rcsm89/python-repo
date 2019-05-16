@@ -1,8 +1,8 @@
 def fibo(n):
-    l =[:]
-    n = 1
-    for j in range(n):
-        n+=
-        l.append()
+    if (n < 2):
+        return 1
+    else:
+        return fibo(n-1)+fibo(n-2)
 
-print(fibo(4))
+a =  int(input())
+print(fibo(a-2))
