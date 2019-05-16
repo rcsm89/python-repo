@@ -1,13 +1,18 @@
 import math
 
-def WillyFunc(n, i =0):
-    if(i == len(str(n))):
-        nn = int(str(n)[-1])
-        return nn * (2 if nn%2 == 0 else 3)
+def WillyFunc(n):
+    if(n<=9):
+        #print("OP")
+        #print(n, "*",(2 if n%2 == 0 else 3),"*",1,"=")
+        #print(n * (2 if n%2 == 0  else 3))
+        return n * (2 if n%2 == 0 else 3)
     else:
-        nn = int(str(n)[i])
-        i+=1
-        return WillyFunc(n, i) + (nn * (len(str(n)) - (i-1)) * (2 if nn%2 == 0 else 3))
+        log = int(math.log10(n))
+        nc = n//10**log
+        #print("OP")
+        #print(nc,"*",(2 if nc%2 == 0 else 3),"*",(log+1),"=")
+        #print(nc * (2 if nc%2 == 0 else 3)*(log+1))
+        return WillyFunc(n - (nc)*10**log) + (nc * (2 if nc%2 == 0 else 3) *(log+1))
 
 
 
