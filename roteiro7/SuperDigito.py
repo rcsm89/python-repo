@@ -1,5 +1,3 @@
-import time
-
 def superDigito(x):
     if (x<=9):
         return x
@@ -8,7 +6,5 @@ def superDigito(x):
         return superDigito(soma)
 
 
-x, k = [int (i) for i in input().split()]
-start = time.time()
-print(superDigito(int(str(x)*k)))
-print(time.time() - start)
+x, k = input().split()
+print(superDigito(int(x*k)))

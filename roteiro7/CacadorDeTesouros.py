@@ -1,5 +1,12 @@
+def caminho(x, y, pont = 0):
+
+        return 0
 
 
 
-m, n = [int(i) for i in input().split()]
-mat = [[input().split()]for j in range(m)]
+
+m, n, mat= [int(i) for i in input().split()],[]
+for i in range(m):
+    mat.append([(j) for j in input().split()])
+
+
