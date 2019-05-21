@@ -6,20 +6,21 @@ def cercado(x, y):
 
 def caminho(x=0, y=0, pont=0):
     ca = mat[x][y]
-    if all(cercado(x, y)) or ca == '#':
+    cerco = cercado(x,y)
+    if all(cerco) or ca == '#':
         pont += dic[mat[x][y]]
         return pont
     else:
         pont += dic[ca]
         mat[x][y] = "#"
-        pm = max([
-            0 if x+1==m or mat[x+1][y] == "#" else caminho(x + 1, y, pont),  # Baixo
-            0 if x-1<0 or mat[x-1][y] == "#" else caminho(x - 1, y, pont),  # Cima
-            0 if y+1==n or mat[x][y+1] == "#" else caminho(x, y + 1, pont),  # Direita
-            0 if y-1<0 or mat[x][y-1] == "#" else caminho(x, y - 1, pont)  # Esquerda
-        ], key=int)
+        ponts = [
+            0 if cerco[0] else caminho(x + 1, y, pont),  # Baixo
+            0 if cerco[2] else caminho(x - 1, y, pont),  # Cima
+            0 if cerco[1] else caminho(x, y + 1, pont),  # Direita
+            0 if cerco[3] else caminho(x, y - 1, pont)  # Esquerda
+        ]
         mat[x][y] = ca
-        return pm 
+        return max(ponts, key=int)
 
 
 m, n = [int(i) for i in input().split()]
